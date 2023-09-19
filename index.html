@@ -1,0 +1,44 @@
+<!DOCTYPE hmtl>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Moja strona startowa</title>
+</head>
+<body>
+    <header>
+	    <h1>Jakub Kalita</h1>
+		<nav>
+		    <ul>
+			    <li><a href="#">Strona Głowna</a></li>
+				<li><a href="#">Podstrona 1</a></li>
+				<li><a href="#">Podstrona 2</a></li>
+				<li><a href="#">Podstrona 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>	
+	    <h2>Strona Głowna</h2>
+		<p>Treść strony głownej.</p>
+	</section>
+	
+	<footer>
+	    <p>* 2023 Jakub Kalita</p>
+		<nav>
+		    <ul>
+			    <li><a href="#">Polityka Prywatności</a></li>
+				<li><a href="#">Regulamin</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+		</nav>
+		<p>Data: <span id="currentDate"></span></p>
+		
+		<script>
+		    const currentDateElement = document.getElementById('currentDate');
+			const currentDate = new Date();
+			currentDateElement.textContent = currentDate.toLocaleDateString();
+		</script>
+	</footer>
+</body>
+</html>
